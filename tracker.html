@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Expense Tracker</h2>
+    <div class="summary">
+        <h3>Balance: ₹<span id="balance">0</span></h3>
+        <h3>Income: ₹<span id="income">0</span></h3>
+        <h3>Expense: ₹<span id="expense">0</span></h3>
+    </div>
+
+    <form id="transaction-form">
+        <input type="text" id="description" placeholder="Enter description" required>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <h3>Transactions</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="transaction-list"></tbody>
+    </table>
+
+    <!-- Download Button -->
+    <button id="download-btn" class="download-btn">Download Report</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
